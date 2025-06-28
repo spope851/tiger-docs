@@ -5,8 +5,8 @@ import type * as Preset from '@docusaurus/preset-classic';
 // This runs in Node.js - Don't use client-side code here (browser APIs, JSX...)
 
 const config: Config = {
-  title: 'My Site',
-  tagline: 'Dinosaurs are cool',
+  title: 'Tiger Grades',
+  tagline: 'Education intelligence for teachers, parents and teaching organizations',
   favicon: 'img/favicon.ico',
 
   // Future flags, see https://docusaurus.io/docs/api/docusaurus-config#future
@@ -22,8 +22,8 @@ const config: Config = {
 
   // GitHub pages deployment config.
   // If you aren't using GitHub pages, you don't need these.
-  organizationName: 'facebook', // Usually your GitHub org/user name.
-  projectName: 'docusaurus', // Usually your repo name.
+  organizationName: 'spenpo-freelance', // Usually your GitHub org/user name.
+  projectName: 'tiger-grades', // Usually your repo name.
 
   onBrokenLinks: 'throw',
   onBrokenMarkdownLinks: 'warn',
@@ -45,9 +45,23 @@ const config: Config = {
           // Please change this to your repo.
           // Remove this to remove the "edit this page" links.
           editUrl:
-            'https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/',
+            'https://github.com/spenpo-freelance/tiger-grades/tree/main/docs/',
         },
-        blog: false,
+        blog: {
+          showReadingTime: true,
+          feedOptions: {
+            type: ['rss', 'atom'],
+            xslt: true,
+          },
+          // Please change this to your repo.
+          // Remove this to remove the "edit this page" links.
+          editUrl:
+            'https://github.com/spenpo-freelance/tiger-grades/tree/main/docs/',
+          // Useful options to enforce blogging best practices
+          onInlineTags: 'warn',
+          onInlineAuthors: 'warn',
+          onUntruncatedBlogPosts: 'warn',
+        },
         theme: {
           customCss: './src/css/custom.css',
         },
@@ -57,23 +71,27 @@ const config: Config = {
 
   themeConfig: {
     // Replace with your project's social card
-    image: 'img/docusaurus-social-card.jpg',
+    image: 'img/tiger-grades-social-card.jpg',
     navbar: {
-      title: 'My Site',
+      title: 'Tiger Grades',
       logo: {
-        alt: 'My Site Logo',
-        src: 'img/logo.svg',
+        alt: 'Tiger Grades Logo',
+        src: 'img/tiger-logo.svg',
       },
       items: [
         {
           type: 'docSidebar',
           sidebarId: 'tutorialSidebar',
           position: 'left',
-          label: 'Tutorial',
+          label: 'Documentation',
         },
-
         {
-          href: 'https://github.com/facebook/docusaurus',
+          to: '/blog',
+          label: 'Release Notes',
+          position: 'left'
+        },
+        {
+          href: 'https://github.com/spenpo-freelance/tiger-grades',
           label: 'GitHub',
           position: 'right',
         },
@@ -83,47 +101,59 @@ const config: Config = {
       style: 'dark',
       links: [
         {
-          title: 'Docs',
+          title: 'Documentation',
           items: [
             {
-              label: 'Tutorial',
+              label: 'Getting Started',
               to: '/docs/intro',
+            },
+            {
+              label: 'User Guides',
+              to: '/docs/user-guides/teachers',
+            },
+            {
+              label: 'Developer Guide',
+              to: '/docs/developer-guide/architecture',
             },
           ],
         },
         {
-          title: 'Community',
+          title: 'User Roles',
           items: [
             {
-              label: 'Stack Overflow',
-              href: 'https://stackoverflow.com/questions/tagged/docusaurus',
+              label: 'Teachers',
+              to: '/docs/user-guides/teachers',
             },
             {
-              label: 'Discord',
-              href: 'https://discordapp.com/invite/docusaurus',
+              label: 'Parents',
+              to: '/docs/user-guides/parents',
             },
             {
-              label: 'X',
-              href: 'https://x.com/docusaurus',
+              label: 'Students',
+              to: '/docs/user-guides/students',
             },
           ],
         },
         {
           title: 'More',
           items: [
-
+            {
+              label: 'Release Notes',
+              to: '/blog',
+            },
             {
               label: 'GitHub',
-              href: 'https://github.com/facebook/docusaurus',
+              href: 'https://github.com/spenpo-freelance/tiger-grades',
             },
           ],
         },
       ],
-      copyright: `Copyright © ${new Date().getFullYear()} My Project, Inc. Built with Docusaurus.`,
+      copyright: `Copyright © ${new Date().getFullYear()} Tiger Grades. Built with Docusaurus.`,
     },
     prism: {
       theme: prismThemes.github,
       darkTheme: prismThemes.dracula,
+      additionalLanguages: ['php', 'sql', 'bash'],
     },
   } satisfies Preset.ThemeConfig,
 };

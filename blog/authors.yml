@@ -23,3 +23,21 @@ slorber:
     linkedin: sebastienlorber
     github: slorber
     newsletter: https://thisweekinreact.com
+
+tiger-grades:
+  name: Tiger Grades Team
+  title: Education Intelligence Platform Developers
+  url: https://github.com/spenpo-freelance/tiger-grades
+  image_url: https://github.com/spenpo-freelance.png
+  page: true
+  socials:
+    github: spenpo-freelance
+
+spenpo:
+  name: Spencer Powell
+  title: Lead Developer, Tiger Grades
+  url: https://github.com/spenpo-freelance
+  image_url: https://github.com/spenpo-freelance.png
+  page: true
+  socials:
+    github: spenpo-freelance

@@ -1,8 +1,107 @@
-facebook:
-  label: Facebook
-  permalink: /facebook
-  description: Facebook tag description
+# Tiger Grades Release Tags
+release:
+  label: Release Notes
+  permalink: /release
+  description: Tiger Grades version releases and updates
 
+# Feature Tags  
+pdf-export:
+  label: PDF Export
+  permalink: /pdf-export
+  description: PDF generation and export functionality
+
+mobile:
+  label: Mobile
+  permalink: /mobile
+  description: Mobile responsiveness and user experience
+
+microsoft-integration:
+  label: Microsoft Integration
+  permalink: /microsoft-integration
+  description: Azure and Microsoft 365 integration features
+
+analytics:
+  label: Analytics
+  permalink: /analytics
+  description: Grade analytics and reporting features
+
+version-management:
+  label: Version Management
+  permalink: /version-management
+  description: Plugin version control and deployment
+
+mandarin:
+  label: Mandarin Support
+  permalink: /mandarin
+  description: Chinese language localization
+
+cache-optimization:
+  label: Cache Optimization
+  permalink: /cache-optimization
+  description: Performance and caching improvements
+
+devops:
+  label: DevOps
+  permalink: /devops
+  description: Deployment and infrastructure improvements
+
+deployment:
+  label: Deployment
+  permalink: /deployment
+  description: Installation and deployment processes
+
+error-handling:
+  label: Error Handling
+  permalink: /error-handling
+  description: Error management and logging improvements
+
+semester-support:
+  label: Semester Support
+  permalink: /semester-support
+  description: Multi-semester academic period management
+
+user-experience:
+  label: User Experience
+  permalink: /user-experience
+  description: UI/UX improvements and enhancements
+
+api:
+  label: API
+  permalink: /api
+  description: REST API and integration features
+
+security:
+  label: Security
+  permalink: /security
+  description: Security enhancements and authentication
+
+database:
+  label: Database
+  permalink: /database
+  description: Database schema and migration improvements
+
+# Additional tags for existing posts
+azure:
+  label: Azure Integration
+  permalink: /azure
+  description: Microsoft Azure cloud integration
+
+major-release:
+  label: Major Release
+  permalink: /major-release
+  description: Major version releases with significant features
+
+foundation:
+  label: Foundation
+  permalink: /foundation
+  description: Core infrastructure and foundational features
+
+setup:
+  label: Setup
+  permalink: /setup
+  description: Installation and initial setup processes
+
+# Legacy demo tags for existing Docusaurus posts
 hello:
   label: Hello
   permalink: /hello
@@ -17,3 +116,8 @@ hola:
   label: Hola
   permalink: /hola
   description: Hola tag description
+
+facebook:
+  label: Facebook
+  permalink: /facebook
+  description: Facebook tag description
