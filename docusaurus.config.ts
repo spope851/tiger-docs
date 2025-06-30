@@ -76,7 +76,7 @@ const config: Config = {
       title: 'Tiger Grades',
       logo: {
         alt: 'Tiger Grades Logo',
-        src: 'img/tiger-logo.svg',
+        src: 'img/tiger-logo.png',
       },
       items: [
         {
